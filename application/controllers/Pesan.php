@@ -53,16 +53,16 @@ class Pesan extends CI_Controller
         //$this->load->view('public/template/isipesanan');
         $this->load->view('public/template/end_content');
         //$this->load->view('public/template/footer');
-        $data = [
-            'nama' => htmlspecialchars($this->input->post('nama'), true),
-            'email' => htmlspecialchars($this->input->post('email'), true),
-            'gambar' => 'default.jpg',
-            'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
-            'role_id' => 2,
-            'user_active' => 1,
-            'date_create' => time()
+        //$data = [
+        //    'nama' => htmlspecialchars($this->input->post('nama'), true),
+        //    'email' => htmlspecialchars($this->input->post('email'), true),
+        //    'gambar' => 'default.jpg',
+        //    'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
+        //    'role_id' => 2,
+        //    'user_active' => 1,
+        //    'date_create' => time()
 
-        ];
-        $this->db->insert('user', $data);
+        //];
+        //$this->db->insert('user', $data);
     }
 }
